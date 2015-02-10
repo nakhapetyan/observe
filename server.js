@@ -27,35 +27,3 @@ O($$).on('change', function(data){
 		value: data.value
 	})
 })
-
-
-
-
-/*
-var o = require('observe-js');
-var obj = { foo: { bar: 'baz' } };
-var observer = new o.PathObserver(obj, 'foo.bar');
-observer.open(function(newValue, oldValue) {
-	console.log(newValue, oldValue);
-});
-obj.foo = 123;
-*/
-
-
-/*
-var myObj = { id: 1, foo: {bar: 'bar'} };
-var observer = new o.ObjectObserver(myObj);
-observer.open(function(added, removed, changed, getOldValueFn) {
-  console.log(added, removed, changed);
-});
-myObj.foo.bar = 123; 
-*/
-
-
-
-/*
-var O = require('observed')
-var object = [1,2,3];//{ name: { last: 'Heckmann', first: 'aaron', foo:[{bar:1}, 2,3]  }}
-O(object).on('change', console.log)  
-object[1] = 123;
-*/
